@@ -5,7 +5,7 @@ root = Tk()
 root.title("Attendance Absentees Checker")
 root.geometry("1100x320")
 root.configure(background="SkyBlue4",relief=SUNKEN,bd=16)
-Label(root, text="Select the CSV FILE", font=('arial', 25 , 'bold'), background="SkyBlue4", foreground="#FFFFFF").pack()
+Label(root, text="Select the CSV FILE:", font=('arial', 25 , 'bold'), background="SkyBlue4", foreground="#FFFFFF").pack()
 
 def browsefunc():
     filename = askopenfilename(filetypes=(("CSV file", "*.csv"),  ("All files", " *.* "),))
